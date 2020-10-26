@@ -802,7 +802,11 @@ canvas {
 @media (max-width: 501px) {
 
   .mouse_scroll,
-  .info,
+  .info {
+    z-index: 999;
+  }
+
+
   .screen,
   .modal {
     z-index: 1000;
@@ -1005,13 +1009,18 @@ canvas {
 
   canvas,
   .arrow,
-  .slides {
+  .slides,
+  .gravity {
     display: none;
   }
 
   .app-container {
     width: 400px;
     text-align: center;
+  }
+
+  #projects {
+    gap: 50px;
   }
 
   .details {
