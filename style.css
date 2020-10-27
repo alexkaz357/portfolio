@@ -44,8 +44,8 @@ canvas {
   margin-right: auto;
   left: 0;
   right: 0;
-  top: 150px;
   text-align: center;
+  top: 150px;
   color: white;
   font-size: 50px;
 }
@@ -668,8 +668,29 @@ canvas {
   display: none;
 }
 
+.gravity {
+  position: relative;
+}
+
+.gravity-welcome {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  text-align: center;
+  color: rgba(225, 225, 225, 0.2);
+}
+
 .gravity-info {
   position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 25px;
+  text-align: center;
   color: rgba(255, 255, 255, 0.2);
 }
 
@@ -677,7 +698,7 @@ canvas {
   padding: 100px;
   text-align: center;
   height: 500px;
-  margin-top: 200px;
+  margin: 200px 0 500px 0;
 }
 
 .link {
