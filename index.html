@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" href="./img/favicon.ico"/>
+  <link rel="icon" type="image/png" href="./img/favicon.ico" />
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r83/three.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.2/dat.gui.js"></script>
@@ -30,7 +30,7 @@
         <h2>Alexander Kazachkov</h2>
       </div>
       <div class="modal-body">
-        <p><a href="./img/CV Alexander Kazachkov.pdf" target="_blank">Resume</a></p>
+        <p><a href="./pdf/CV Alexander Kazachkov.pdf" target="_blank">Resume</a></p>
         <p>Email - alexkaz357@gmail.com</p>
         <p>Mobile - 972-545996855</p>
         <p class="p-link"><a href="https://www.linkedin.com/in/alexander-kazachkov-7140781b9/" target="_blank"
@@ -88,13 +88,25 @@
   <div class="app-container">
     <section id="about" class="about">
       <div class="details">
-        <img src="./img/alex_kaz.jpg" alt="">
+        <div class="img-link">
+          <img src="./img/alex_kaz.jpg" alt="">
+          <p class="p-link"><a href="https://www.linkedin.com/in/alexander-kazachkov-7140781b9/" target="_blank"
+              class="go-to linkedin"><i class="fab fa-linkedin-in"></i></a></p>
+          <p class="p-link"><a href="https://github.com/alexkaz357" target="_blank" class="go-to git"><i
+                class="fab fa-github"></i></a>
+          </p>
+        </div>
         <div>
           <h2>About me</h2>
           <p>I am a Full-Stack / Frontend Developer with proficiency in writing single-page-applications using the
             latest WEB technologies (React.js, Vue.js, Angular, Node.js). I've Graduated from the Coding Academy - 640
             hours of an intensive coding Bootcamp that qualifies Full-Stack web developers. Formerly I'm an electrical
-            designengineer with B.Sc. in Electrical Engineering at H.I.T with a GPA of 88.</p>
+            design engineer with B.Sc. in Electrical Engineering at H.I.T with a GPA of 88.</p>
+          <div class="certificate-press">
+            <p><a href="./pdf/Bootcamp Certificate -alexkaz cajul20.pdf" target="_blank">Certificate of Bootcamp completion</a>
+            </p>
+            <p class="press-info">For more details press the&nbsp;&nbsp;&nbsp;<i class="fas fa-info"></i>&nbsp;&nbsp;&nbsp;button</p>
+          </div>
         </div>
       </div>
     </section>
@@ -123,6 +135,15 @@
 
     <section class="projects">
       <h2>My Projects</h2>
+
+      <div class="filter">
+        <p onclick="filter('all')">All</p>
+        <p onclick="filter('ReactJS')">ReactJS</p>
+        <p onclick="filter('VueJS')">VueJS</p>
+        <p onclick="filter('VanillaJS')">VanillaJS</p>
+        <p onclick="filter('Sass')">Sass</p>
+      </div>
+
       <div id="projects"></div>
     </section>
 

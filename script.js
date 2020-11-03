@@ -9,7 +9,7 @@ closeFooter.addEventListener('click', closeModal);
 window.addEventListener('mousedown', outsideClick);
 
 function onInit() {
-  renderProjects();
+  renderProjects(projects);
 }
 
 function toggleMenu() {
@@ -32,6 +32,14 @@ function outsideClick(e) {
 }
 
 const projects = [{
+    id: 6,
+    name: 'myteam',
+    url: 'https://alexkaz357.github.io/myteam/#/',
+    git: 'https://github.com/alexkaz357/myteam',
+    publishedAt: formatDate(1604361600000),
+    labels: ['ReactJS', 'Sass', 'Pixel Perfect']
+  },
+  {
     id: 5,
     name: 'MissBooks',
     url: 'https://alexkaz357.github.io/MissBooks/#/',
@@ -73,9 +81,9 @@ const projects = [{
   }
 ];
 
-function renderProjects() {
+function renderProjects(projectsToRender) {
   var strHtml = '';
-  projects.forEach(project => {
+  projectsToRender.forEach(project => {
     strHtml +=
       `
       <div class="project">
@@ -122,4 +130,10 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+}
+
+function filter(val) {
+  let filteredProjects = projects.filter(project => project.labels.includes(val))
+  if (val === 'all') filteredProjects = projects
+  renderProjects(filteredProjects)
 }

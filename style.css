@@ -293,7 +293,7 @@ canvas {
   padding-top: 50px;
   margin: 0px auto 50px auto;
   border-bottom: 1px solid #b2b2b2;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .details {
@@ -307,6 +307,15 @@ canvas {
 .details img {
   width: 300px;
   border-radius: 100%;
+  margin-bottom: 20px;
+}
+
+.img-link {
+  text-align: center;
+}
+
+.img-link a:hover {
+  color: #1fd0b6;
 }
 
 .details h2 {
@@ -317,6 +326,20 @@ canvas {
 
 .details p {
   font-size: 23px;
+}
+
+.certificate-press {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.certificate-press p {
+  font-size: 15px;
+}
+
+.certificate-press a:hover {
+  color: #1fd0b6;
 }
 
 .features {
@@ -415,8 +438,28 @@ canvas {
 
 .projects h2 {
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   text-decoration: underline;
+}
+
+.filter {
+  margin: auto;
+  width: 1000px;
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: space-around;
+}
+
+.filter p {
+  border: 1px solid #000;
+  padding: 0 7px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.filter p:hover {
+  border: 1px solid #1fd0b6;
+  color: #1fd0b6;
 }
 
 .project {
@@ -435,8 +478,8 @@ canvas {
   display: block;
 }
 
-#projects div:nth-child(5) img,
-#projects div:nth-child(3) img {
+#projects div:nth-child(4) img,
+#projects div:nth-child(6) img {
   border-top: 1px solid #b2b2b2;
 }
 
@@ -822,11 +865,22 @@ canvas {
 
 @media (max-width: 501px) {
 
+  .img-link img {
+    display: block;
+  }
+
+  .certificate-press {
+    margin-top: 50px;
+  }
+
+  .filter {
+    width: 400px;
+  }
+
   .mouse_scroll,
   .info {
     z-index: 999;
   }
-
 
   .screen,
   .modal {
@@ -871,15 +925,15 @@ canvas {
     }
 
     25% {
-      opacity: 0.85
+      opacity: 0.75
     }
 
     50% {
-      opacity: 0.7
+      opacity: 0.5
     }
 
     75% {
-      opacity: 0.85
+      opacity: 0.75
     }
 
     100% {
