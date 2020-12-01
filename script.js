@@ -32,6 +32,14 @@ function outsideClick(e) {
 }
 
 const projects = [{
+    id: 7,
+    name: 'Inspire',
+    url: 'https://alexkaz357.github.io/Inspire/',
+    git: 'https://github.com/alexkaz357/Inspire',
+    publishedAt: formatDate(1606694400000),
+    labels: ['ReactJS', 'Sass', 'API']
+  },
+  {
     id: 6,
     name: 'myteam',
     url: 'https://alexkaz357.github.io/myteam/#/',

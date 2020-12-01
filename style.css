@@ -478,8 +478,8 @@ canvas {
   display: block;
 }
 
-#projects div:nth-child(4) img,
-#projects div:nth-child(6) img {
+#projects div:nth-child(5) img,
+#projects div:nth-child(7) img {
   border-top: 1px solid #b2b2b2;
 }
 
