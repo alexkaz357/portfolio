@@ -328,18 +328,12 @@ canvas {
   font-size: 23px;
 }
 
-.certificate-press {
+.press {
   margin-top: 100px;
-  display: flex;
-  justify-content: space-between;
 }
 
-.certificate-press p {
+.press p {
   font-size: 15px;
-}
-
-.certificate-press a:hover {
-  color: #1fd0b6;
 }
 
 .features {
@@ -370,48 +364,48 @@ canvas {
   color: #61dbfb;
 }
 
-.keys .vue {
-  color: #41B883;
+.keys .redux {
+  color: #764abc;
 }
 
-.keys .angular {
-  color: #dd1b16;
-}
-
-.keys .mongo {
-  color: #4DB33D;
-}
-
-.keys .js {
-  color: #f0db4f;
-}
-
-.keys .css {
-  color: #264de4;
-}
-
-.keys .html {
-  color: #e34c26;
-}
-
-.keys .sass {
-  color: #cd6799;
+.keys .next {
+  color: #000;
 }
 
 .keys .node {
   color: #68a063;
 }
 
-.keys .server {
-  color: #9c4ce6;
+.keys .express {
+  color: #000;
 }
 
-.keys .file {
-  color: #8aff9a;
+.keys .nest {
+  color: #e0234e;
 }
 
-.keys .cube {
-  color: #ff6ac6;
+.keys .css {
+  color: #264de4;
+}
+
+.keys .tailwind {
+  color: #000;
+}
+
+.keys .sass {
+  color: #cd6799;
+}
+
+.keys .js {
+  color: #f0db4f;
+}
+
+.keys .mongo {
+  color: #4DB33D;
+}
+
+.keys .postgres {
+  color: #008bb9;
 }
 
 .keys .attention {
@@ -476,6 +470,7 @@ canvas {
   height: 180px;
   object-fit: cover;
   display: block;
+  margin-top: 10px;
 }
 
 #projects div:nth-child(5) img,
@@ -524,6 +519,7 @@ canvas {
   align-items: center;
   cursor: pointer;
   font-size: 30px;
+  z-index: 1;
 }
 
 .screen {
@@ -857,6 +853,7 @@ canvas {
   align-items: center;
   cursor: pointer;
   font-size: 30px;
+  z-index: 1;
 }
 
 
@@ -869,7 +866,7 @@ canvas {
     display: block;
   }
 
-  .certificate-press {
+  .press {
     margin-top: 50px;
   }
 
@@ -905,11 +902,11 @@ canvas {
   }
 
   .mobile .text1 {
-    top: 25%;
+    top: 30%;
   }
 
   .mobile .text2 {
-    top: 45%;
+    top: 40%;
   }
 
   .mobile h3 {

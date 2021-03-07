@@ -36,7 +36,6 @@ const projects = [{
     name: 'Inspire',
     url: 'https://alexkaz357.github.io/Inspire/',
     git: 'https://github.com/alexkaz357/Inspire',
-    publishedAt: formatDate(1606694400000),
     labels: ['ReactJS', 'Sass', 'API']
   },
   {
@@ -44,7 +43,6 @@ const projects = [{
     name: 'myteam',
     url: 'https://alexkaz357.github.io/myteam/#/',
     git: 'https://github.com/alexkaz357/myteam',
-    publishedAt: formatDate(1604361600000),
     labels: ['ReactJS', 'Sass', 'Pixel Perfect']
   },
   {
@@ -52,7 +50,6 @@ const projects = [{
     name: 'MissBooks',
     url: 'https://alexkaz357.github.io/MissBooks/#/',
     git: 'https://github.com/alexkaz357/MissBooks',
-    publishedAt: formatDate(1602633600000),
     labels: ['VueJS', 'Sass', 'API']
   },
   {
@@ -60,7 +57,6 @@ const projects = [{
     name: 'FoodVentures',
     url: 'https://food-ventures-alexkaz.herokuapp.com/#/',
     git: 'https://github.com/alexkaz357/food-ventures',
-    publishedAt: formatDate(1601424000000),
     labels: ['ReactJS', 'NodeJS', 'Sass']
   },
   {
@@ -68,7 +64,6 @@ const projects = [{
     name: 'AppSus',
     url: 'https://alexkaz357.github.io/AppSus/',
     git: 'https://github.com/alexkaz357/AppSus',
-    publishedAt: formatDate(1598745600000),
     labels: ['ReactJS', 'CSS3', 'API']
   },
   {
@@ -76,7 +71,6 @@ const projects = [{
     name: 'Memegen',
     url: 'https://alexkaz357.github.io/memegen/',
     git: 'https://github.com/alexkaz357/memegen',
-    publishedAt: formatDate(1597536000000),
     labels: ['VanillaJS', 'HTML5', 'CSS3']
   },
   {
@@ -84,7 +78,6 @@ const projects = [{
     name: 'Minesweeper',
     url: 'https://alexkaz357.github.io/minesweeper/',
     git: 'https://github.com/alexkaz357/minesweeper',
-    publishedAt: formatDate(1595721600000),
     labels: ['VanillaJS', 'HTML5', 'CSS3']
   }
 ];
@@ -102,7 +95,6 @@ function renderProjects(projectsToRender) {
         <div>
         <a href="${project.git}" target="_blank" class="link-to">Git </a> <i class="fas fa-arrows-alt-h"></i> <a href="${project.url}" target="_blank" class="link-to"> Project</a>
         </div>
-        <p>Air date - ${project.publishedAt}</p>
         <a href="${project.url}" target="_blank">
           <img src="./img/${project.id}.png">
         </a>
