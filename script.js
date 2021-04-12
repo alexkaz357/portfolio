@@ -32,32 +32,39 @@ function outsideClick(e) {
 }
 
 const projects = [{
-    id: 7,
-    name: 'Inspire',
-    url: 'https://alexkaz357.github.io/Inspire/',
-    git: 'https://github.com/alexkaz357/Inspire',
-    labels: ['ReactJS', 'Sass', 'API']
+    id: 8,
+    name: 'FoodVentures',
+    url: 'https://food-ventures-alexkaz.herokuapp.com/#/',
+    git: 'https://github.com/alexkaz357/food-ventures',
+    labels: ['ReactJS', 'NodeJS', 'Sass']
   },
   {
-    id: 6,
+    id: 7,
     name: 'myteam',
     url: 'https://alexkaz357.github.io/myteam/#/',
     git: 'https://github.com/alexkaz357/myteam',
     labels: ['ReactJS', 'Sass', 'Pixel Perfect']
   },
   {
+    id: 6,
+    name: 'TheWeatherApp',
+    url: 'https://alexkaz357.github.io/the-weather-app/#/',
+    git: 'https://github.com/alexkaz357/the-weather-app',
+    labels: ['ReactJS', 'Sass', 'API']
+  },
+  {
     id: 5,
-    name: 'MissBooks',
-    url: 'https://alexkaz357.github.io/MissBooks/#/',
-    git: 'https://github.com/alexkaz357/MissBooks',
-    labels: ['VueJS', 'Sass', 'API']
+    name: 'Inspire',
+    url: 'https://alexkaz357.github.io/Inspire/',
+    git: 'https://github.com/alexkaz357/Inspire',
+    labels: ['ReactJS', 'Sass', 'API']
   },
   {
     id: 4,
-    name: 'FoodVentures',
-    url: 'https://food-ventures-alexkaz.herokuapp.com/#/',
-    git: 'https://github.com/alexkaz357/food-ventures',
-    labels: ['ReactJS', 'NodeJS', 'Sass']
+    name: 'Star Wars Favorite Movies',
+    url: 'https://alexkaz357.github.io/star-wars-favorite-movies/',
+    git: 'https://github.com/alexkaz357/star-wars-favorite-movies',
+    labels: ['ReactJS', 'Sass', 'API']
   },
   {
     id: 3,

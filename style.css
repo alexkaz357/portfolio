@@ -95,27 +95,27 @@ canvas {
 }
 
 .unu {
-  -webkit-animation-delay: .1s;
-  -moz-animation-delay: .1s;
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
   -webkit-animation-direction: alternate;
   animation-direction: alternate;
   animation-delay: alternate;
 }
 
 .doi {
-  -webkit-animation-delay: .2s;
-  -moz-animation-delay: .2s;
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
   -webkit-animation-direction: alternate;
-  animation-delay: .2s;
+  animation-delay: 0.2s;
   animation-direction: alternate;
   margin-top: -6px;
 }
 
 .trei {
-  -webkit-animation-delay: .3s;
-  -moz-animation-delay: .3s;
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
   -webkit-animation-direction: alternate;
-  animation-delay: .3s;
+  animation-delay: 0.3s;
   animation-direction: alternate;
   margin-top: -6px;
 }
@@ -237,7 +237,7 @@ canvas {
   }
 
   50% {
-    opacity: .5;
+    opacity: 0.5;
   }
 
   100% {
@@ -251,7 +251,7 @@ canvas {
   }
 
   50% {
-    opacity: .5;
+    opacity: 0.5;
   }
 
   100% {
@@ -265,7 +265,7 @@ canvas {
   }
 
   50% {
-    opacity: .5;
+    opacity: 0.5;
   }
 
   100% {
@@ -279,7 +279,7 @@ canvas {
   }
 
   50% {
-    opacity: .5;
+    opacity: 0.5;
   }
 
   100% {
@@ -401,7 +401,7 @@ canvas {
 }
 
 .keys .mongo {
-  color: #4DB33D;
+  color: #4db33d;
 }
 
 .keys .postgres {
@@ -459,6 +459,15 @@ canvas {
 .project {
   text-align: center;
   border: 1px solid #b2b2b2;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+.project:hover {
+  border: 1px solid #1fd0b6;
+  box-shadow: 0px 10px 40px -10px rgba(31, 208, 182, 1);
+  transform: translate(0, -5px);
+  transition: all 0.5s;
 }
 
 .project h3 {
@@ -471,10 +480,11 @@ canvas {
   object-fit: cover;
   display: block;
   margin-top: 10px;
+  border-radius: 0 0 9px 9px;
 }
 
-#projects div:nth-child(5) img,
-#projects div:nth-child(7) img {
+#projects div:nth-child(6) img,
+#projects div:nth-child(8) img {
   border-top: 1px solid #b2b2b2;
 }
 
@@ -533,14 +543,19 @@ canvas {
   opacity: 0;
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s .8s, opacity .8s linear;
+  transition: visibility 0s 0.8s, opacity 0.8s linear;
   z-index: 1;
 }
 
 /* MODAL */
 :root {
   --modal-duration: 1s;
-  --modal-color: -webkit-linear-gradient(83deg, #465b98 0%, #69347f 43%, #11253b 100%);
+  --modal-color: -webkit-linear-gradient(
+    83deg,
+    #465b98 0%,
+    #69347f 43%,
+    #11253b 100%
+  );
 }
 
 .modal {
@@ -758,7 +773,7 @@ canvas {
   height: 2px;
   border-radius: 2px;
   overflow: hidden;
-  background: #BEBDBE;
+  background: #bebdbe;
   z-index: 2;
 }
 
@@ -779,7 +794,7 @@ canvas {
   left: 0;
   width: 0;
   height: 2px;
-  background: #C3002F;
+  background: #c3002f;
 }
 
 .link__line {
@@ -788,7 +803,7 @@ canvas {
   margin-right: 30px;
   width: 150px;
   height: 2px;
-  background: #BEBDBE;
+  background: #bebdbe;
   overflow: hidden;
   z-index: 1;
 }
@@ -800,11 +815,11 @@ canvas {
   left: 80px;
   width: 70px;
   height: 2px;
-  background: #C3002F;
+  background: #c3002f;
 }
 
 .link__text {
-  color: #4A4A4A;
+  color: #4a4a4a;
   font-family: "Oswald", sans-serif;
   font-size: 18px;
   text-transform: uppercase;
@@ -856,12 +871,7 @@ canvas {
   z-index: 1;
 }
 
-
-
-
-
 @media (max-width: 501px) {
-
   .img-link img {
     display: block;
   }
@@ -918,89 +928,89 @@ canvas {
 
   @-webkit-keyframes fade {
     0% {
-      opacity: 1
+      opacity: 1;
     }
 
     25% {
-      opacity: 0.75
+      opacity: 0.75;
     }
 
     50% {
-      opacity: 0.5
+      opacity: 0.5;
     }
 
     75% {
-      opacity: 0.75
+      opacity: 0.75;
     }
 
     100% {
-      opacity: 1
+      opacity: 1;
     }
   }
 
   @-moz-keyframes fade {
     0% {
-      opacity: 1
+      opacity: 1;
     }
 
     25% {
-      opacity: 0.85
+      opacity: 0.85;
     }
 
     50% {
-      opacity: 0.7
+      opacity: 0.7;
     }
 
     75% {
-      opacity: 0.85
+      opacity: 0.85;
     }
 
     100% {
-      opacity: 1
+      opacity: 1;
     }
   }
 
   @keyframes fade {
     0% {
-      opacity: 1
+      opacity: 1;
     }
 
     25% {
-      opacity: 0.85
+      opacity: 0.85;
     }
 
     50% {
-      opacity: 0.7
+      opacity: 0.7;
     }
 
     75% {
-      opacity: 0.85
+      opacity: 0.85;
     }
 
     100% {
-      opacity: 1
+      opacity: 1;
     }
   }
 
   @-o-keyframes fade {
     0% {
-      opacity: 1
+      opacity: 1;
     }
 
     25% {
-      opacity: 0.85
+      opacity: 0.85;
     }
 
     50% {
-      opacity: 0.7
+      opacity: 0.7;
     }
 
     75% {
-      opacity: 0.85
+      opacity: 0.85;
     }
 
     100% {
-      opacity: 1
+      opacity: 1;
     }
   }
 
@@ -1026,11 +1036,11 @@ canvas {
 
   @-webkit-keyframes STAR-MOVE {
     from {
-      background-position: 5% 5%
+      background-position: 5% 5%;
     }
 
     to {
-      background-position: 1300% 600%
+      background-position: 1300% 600%;
     }
   }
 
